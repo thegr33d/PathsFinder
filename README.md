@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/thegr33d/PathsFinder/master/nodes.png" width="25%"/>
 </p>
-<div style="font-size:8px; margin-bottom: 1rem" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
+<div style="font-size:8px; margin-bottom: 1rem;" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
 </div>
 
 </br>
