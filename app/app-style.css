@@ -9,7 +9,7 @@
 body{
     margin: 0;
     background-color: white;
-    height: calc(100vh + 3rem);
+    height: 100vh;
 }
 
 #app-container{
