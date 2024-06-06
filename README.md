@@ -1,8 +1,7 @@
 # Paths Finder
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/thegr33d/PathsFinder/master/nodes.png
-  " width="150"/>
+  <img src="https://raw.githubusercontent.com/thegr33d/PathsFinder/master/nodes.png"/>
 </p>
 <div style="font-size:0.5em; margin-bottom: 1rem" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
 </div>
