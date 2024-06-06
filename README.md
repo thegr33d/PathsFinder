@@ -72,7 +72,9 @@ Upon loading the page, rules and options are displayed based on the type of devi
 ## Preview
 See how the project looks and test it by visiting the following link:
 <div align="center">
-<a href="https://thegr33d.github.io/PathsFinder/index/index.html">https://thegr33d.github.io/PathsFinder/index/index.html</a>
+
+[https://thegr33d.github.io/PathsFinder/index/index.html](https://thegr33d.github.io/PathsFinder/index/index.html)
+
 </div>
 ## Credits and Copyright
 
