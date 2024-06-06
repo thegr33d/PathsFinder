@@ -70,7 +70,7 @@ Upon loading the page, rules and options are displayed based on the type of devi
 - Connect nodes by first double-tapping on the source node and then tapping on the destination node.
 
 ## Preview
-See how the project looks like and test it by visiting the following link:
+See how the project looks and test it by visiting the following link:
 [https://thegr33d.github.io/PathsFinder/index/index.html](https://thegr33d.github.io/PathsFinder/index/index.html)
 
 ## Credits and Copyright
