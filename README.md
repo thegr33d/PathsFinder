@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/thegr33d/PathsFinder/master/nodes.png"/>
 </p>
-<div style="font-size:0.5em; margin-bottom: 1rem" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
+<div style="font-size:8px; margin-bottom: 1rem" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
 </div>
 
 Welcome! This is the documentation for Paths Finders, a web application that offers an intuitive experience for running pathfinding algorithms on an interactive graph.
