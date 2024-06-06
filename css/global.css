@@ -51,7 +51,6 @@ body{
     font-size: var(--medium-font-size);
     padding-top: calc(var(--header-height));
     overflow: visible;
-    height: calc(100vh - 8rem);
 }
 
 header{
