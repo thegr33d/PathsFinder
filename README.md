@@ -1,6 +1,6 @@
 # Paths Finder
 
-Welcome! This is the documentation for Path Finders, a web application that offers an intuitive experience for running pathfinding algorithms on an interactive graph.
+Welcome! This is the documentation for Paths Finders, a web application that offers an intuitive experience for running pathfinding algorithms on an interactive graph.
 
 ## Introduction
 
