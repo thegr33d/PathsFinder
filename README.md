@@ -69,6 +69,10 @@ Upon loading the page, rules and options are displayed based on the type of devi
 - Add more nodes by double-tapping on the worksheet.
 - Connect nodes by first double-tapping on the source node and then tapping on the destination node.
 
+## Preview
+See how the project looks like and test it by visiting the following link:
+[https://thegr33d.github.io/PathsFinder/index/index.html](https://thegr33d.github.io/PathsFinder/index/index.html)
+
 ## Credits and Copyright
 
 This WebApp was developed by Agnello Renato Nicolae as a project for the Systems and Networks course during the 2023/24 school year.
