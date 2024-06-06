@@ -1,69 +1,69 @@
-# Paths finder
+# Paths Finder
 
-Benvenuto! Questa è la documentazione di Path Finders, un'applicazione web che offre un'esperienza intuitiva per eseguire algoritmi di ricerca dei percorsi su un grafo interattivo.
+Welcome! This is the documentation for Path Finders, a web application that offers an intuitive experience for running pathfinding algorithms on an interactive graph.
 
-## Introduzione
+## Introduction
 
-Paths Finder fornisce un'interfaccia semplice e intuitiva per eseguire algoritmi di ricerca dei percorsi su grafi di varie dimensioni. Grazie alla sua facilità d'uso è uno strumento ideale per esplorare e analizzare percorsi qualsiasi percorso si desideri.
+Paths Finder provides a simple and intuitive interface for running pathfinding algorithms on graphs of various sizes. Its ease of use makes it an ideal tool for exploring and analyzing any desired paths.
 
-## Utilizzo
+## Usage
 
-### Selezione dell'Algoritmo
+### Algorithm Selection
 
-Sulla pagina "App", puoi selezionare il tipo di algoritmo desiderato da un menu a tendina. I tipi di algoritmo disponibili includono:
+On the "App" page, you can select the type of algorithm you want from a dropdown menu. The available algorithm types include:
 
 - Dijkstra;
-- Dijkstra orientato;
+- Directed Dijkstra;
 - Bellman-Ford;
-- Bellman-Ford orientato.
+- Directed Bellman-Ford.
 
-### Costruzione del Grafo
+### Graph Construction
 
-Una volta selezionato l'algoritmo desiderato, puoi costruire un grafo interattivo trascinando e rilasciando nodi e creando connessioni tra di essi.
+Once the desired algorithm is selected, you can construct an interactive graph by dragging and dropping nodes and creating connections between them.
 
-### Esecuzione dell'Algoritmo
+### Running the Algorithm
 
-Dopo aver costruito il grafo, premi il pulsante "Run Algorithm" per eseguire l'algoritmo selezionato sul grafo.
+After building the graph, press the "Run Algorithm" button to execute the selected algorithm on the graph.
 
-### Visualizzazione dei Risultati
+### Viewing Results
 
-Una volta eseguito l'algoritmo, puoi visualizzare il percorso trovato nel grafico, insieme a tutti gli altri percorsi secondari con lo stesso costo.
+Once the algorithm is executed, you can view the found path in the graph, along with all other secondary paths with the same cost.
 
-## Azioni Aggiuntive
+## Additional Actions
 
-Oltre all'esecuzione dell'algoritmo, puoi eseguire, per mezzo dei rispettivi bottoni, le seguentile azioni sul grafo:
+In addition to running the algorithm, you can perform the following actions on the graph via the respective buttons:
 
-- **Centra il Grafo**: Centra il grafo nell'area di visualizzazione;
-- **Aggiungi Nodo**: Aggiunge un nuovo nodo al grafo;
-- **Rimuovi Nodo**: Rimuove un nodo selezionato dal grafo;
-- **Rimuovi Arco**: Rimuove un arco selezionato dal grafo;
-- **Rimuovi Tutte le Connessioni**: Rimuove tutte le connessioni presenti nel grafo;
-- **Rimuovi Tutti i Nodi**: Rimuove tutti i nodi presenti nel grafo.
+- **Center Graph**: Centers the graph in the viewing area;
+- **Add Node**: Adds a new node to the graph;
+- **Remove Node**: Removes a selected node from the graph;
+- **Remove Edge**: Removes a selected edge from the graph;
+- **Remove All Connections**: Removes all connections present in the graph;
+- **Remove All Nodes**: Removes all nodes present in the graph.
 
-## Regole e Opzioni
+## Rules and Options
 
-All'avvio della pagina, vengono visualizzate delle regole e opzioni in base al tipo di dispositivo utilizzato. Le regole includono suggerimenti su come interagire con il grafo e le opzioni disponibili per mezzo di alcuni tasti.
+Upon loading the page, rules and options are displayed based on the type of device being used. The rules include tips on how to interact with the graph and the available options via certain keys.
 
-### Regole per Desktop
+### Rules for Desktop
 
-- Utilizza "backspace" per rimuovere nodi e archi selezionati.
-- Modifica il peso degli archi facendo doppio clic su di essi e selezionando il valore corretto.
-- Aggiungi più nodi facendo doppio clic sul foglio di lavoro.
-- Collega i nodi selezionando prima il nodo di origine con un doppio clic e poi facendo clic sul nodo di destinazione.
-- Quando sei pronto per iniziare, premi "enter" e visualizza i risultati dell'algoritmo.
+- Use "backspace" to remove selected nodes and edges.
+- Edit edge weights by double-clicking on them and selecting the correct value.
+- Add more nodes by double-clicking on the worksheet.
+- Connect nodes by first double-clicking on the source node and then clicking on the destination node.
+- When ready to start, press "enter" to view the algorithm results.
 
-### Regole per Dispositivi Mobili
+### Rules for Mobile Devices
 
-- Modifica il peso degli archi facendo doppio tap su di essi e selezionando il valore corretto.
-- Aggiungi più nodi facendo doppio tap sul foglio di lavoro.
-- Collega i nodi selezionando prima il nodo di origine con un doppio tap e poi facendo tap sul nodo di destinazione.
+- Edit edge weights by double-tapping on them and selecting the correct value.
+- Add more nodes by double-tapping on the worksheet.
+- Connect nodes by first double-tapping on the source node and then tapping on the destination node.
 
-## Crediti e Copyright
+## Credits and Copyright
 
-Questa WebApp è stata sviluppata da Agnello Renato Nicolae come progetto per la materia di Sistemi e Reti durante l'anno scolastico 2023/24.
+This WebApp was developed by Agnello Renato Nicolae as a project for the Systems and Networks course during the 2023/24 school year.
 
-Tutti i diritti riservati. ©2023-2024 Renato Nicolae Agnello.
+All rights reserved. ©2023-2024 Renato Nicolae Agnello.
 
-Per ulteriori informazioni sui termini di utilizzo e i diritti d'autore, consulta il [documento completo sui diritti d'autore](link_al_documento)
+For more information on terms of use and copyrights, refer to the [full copyright document](link_to_document).
 
-Per ulteriori informazioni o supporto, contatta Renato Nicolae Agnello all'indirizzo email [agnello.renatonicolae@istitutomontani.edu.it](mailto:agnello.renatonicolae@istitutomontani.edu.it).
+For further information or support, contact Renato Nicolae Agnello at [agnello.renatonicolae@istitutomontani.edu.it](mailto:agnello.renatonicolae@istitutomontani.edu.it).
