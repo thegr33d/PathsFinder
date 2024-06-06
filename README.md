@@ -8,6 +8,7 @@
 
 </br>
 
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/thegr33d/PathsFinder?include_prereleases)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:agnello.renatonicolae@istitutomontani.edu.it)
 
