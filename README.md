@@ -64,6 +64,6 @@ This WebApp was developed by Agnello Renato Nicolae as a project for the Systems
 
 All rights reserved. ©2023-2024 Renato Nicolae Agnello.
 
-For more information on terms of use and copyrights, refer to the [full copyright document](link_to_document).
+For more information on terms of use and copyrights, refer to the [full copyright document](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 For further information or support, contact Renato Nicolae Agnello at [agnello.renatonicolae@istitutomontani.edu.it](mailto:agnello.renatonicolae@istitutomontani.edu.it).
