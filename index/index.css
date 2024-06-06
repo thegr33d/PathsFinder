@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #ffffff;
     color: #333;
-    height: calc(100vh - 0rem);
+    height: calc(100vh - 8rem);
 }
 
 h1 {
