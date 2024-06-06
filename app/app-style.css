@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500;6..12,600;6..12,700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+  --container-width: 90%;
+  --container-height: 32rem;
+  --button-margin-block: .3rem;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#app-container{
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    border: 1px solid #b0b0b0; /* Aggiungi un bordo per visualizzare il contenitore */
+    position: relative;
+    overflow: hidden;
+}
+
+#app-container > h1{
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#sheet > *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.node{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: beige;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted, .highlighted:focus{
+    background-color: yellow; /* Cambia il colore di sfondo del nodo */
+    border-color: red; /* Cambia il colore del bordo del nodo */
+    border-width: 20px; /* Cambia lo spessore del bordo del nodo */
+}
+
+.options{
+    width: var(--container-width);
+    margin: 0 auto 2rem;
+}
+
+#path-finder{
+    position: relative;
+    width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#screen{
+    position: relative;
+}
+
+#network {
+    height: var(--container-height);
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+#controls {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#controls > button{
+    margin-block: var(--button-margin-block);
+}
+
+select:active {
+    border-color: #4375c1;
+}
+
+#algorithm-result{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    max-height: 250px;
+}
+
+#algorithm-solutions {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Cambiato in auto */
+    white-space: nowrap;
+    max-height: 250px;
+}
+
+/* Impostazioni per la scrollbar */
+#algorithm-solutions::-webkit-scrollbar {
+    width: 5px; /* Larghezza della scrollbar */
+    scrollbar-width: thin; /* Larghezza della scrollbar */
+}
+
+#algorithm-solutions::-webkit-scrollbar-thumb {
+    background-color: #888; /* Colore della scrollbar */
+}
+
+
+.solution-row {
+    display: flex;
+    align-items: center;
+}
+
+.solution-row > .mark {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.solution-row > p {
+    max-width: 380px; /* Imposta la larghezza massima del paragrafo */
+    overflow-x: auto; /* Abilita lo scorrimento orizzontale quando il contenuto supera la larghezza */
+    white-space: nowrap; /* Impedisce il riavvolgimento del testo */
+    font-size: 1rem;
+}
+
+.solution-row > p::-webkit-scrollbar {
+    height: 4px;
+    scrollbar-width: thin; /* Larghezza della scrollbar */
+}
+
+.solution-row > p::-webkit-scrollbar-track {
+    background-color: #888; /* Colore della scrollbar */
+}
+
+.solution-row > p::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+}
+
+#algorithm-selector{
+    margin-bottom: 1rem;
+    width: fit-content;
+    align-self: flex-end;
+    z-index: 1000;
+}
+
+/* Stile per l'ombra di sfondo quando l'alert è attivo */
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Trasparenza per l'ombra */
+    z-index: 9999; /* Assicura che l'overlay sia sopra tutto il resto */
+    display: none; /* Nascondi di default */
+}
+
+/* Stile per l'alert delle regole */
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Effetto ombra */
+    z-index: 10000; /* Assicura che l'alert sia sopra tutto il resto */
+    display: none; /* Nascondi di default */
+    width: 400px; /* Larghezza fissa */
+    height: 200px; /* Altezza fissa */
+    flex-direction: column;
+
+}
+
+.alert h2 {
+    margin: 0;
+}
+
+.alert p {
+    margin-bottom: 10px;
+}
+
+.alert .alert-controls {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+}
+
+.save-button {
+    background-color: #518ee9;
+}
+
+#run-algorithm{
+    background-color: #4ad64c;
+}
+
+
+/* Stile per il bottone di "Don't show more" */
+.dont-show-container {
+    bottom: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.dont-show-container > label{
+    font-size: .8rem;
+}
+
+.alert-controls button:last-child {
+    background-color: rgb(231, 41, 41);
+}
+
+.alert-controls button:disabled,
+.alert-controls button[disabled] {
+    color: #7c7c7c;
+    background-color: #f0eeee;
+}
+
+@media screen and (max-width: 1024px){
+    :root{
+        --container-width: 90%;
+        --container-height: 32rem;
+        --button-margin-block: .3rem;
+    }
+
+    #screen{
+        flex-direction: column;
+    }
+
+    #network{
+        position: relative;
+        height: var(--container-height);
+    }
+
+    #controls{
+        position: relative;
+        right: unset;
+        top: unset;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    button{
+        border: none;
+        border-radius: .2rem;
+        padding: .4rem .5rem;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #111;
+    }
+
+    .solution-row > .mark {
+        width: .9rem;
+        height: .9rem;
+        margin-right: 1rem;
+    }
+    
+    .solution-row > p {
+        max-width: 380px; /* Imposta la larghezza massima del paragrafo */
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 745px){
+    :root{
+        --container-width: 90%;
+        --container-height: 28rem;
+        --button-margin-block: .3rem;
+    }
+
+    #network{
+        height: var(--container-height);
+    }
+
+    button{
+        border: none;
+        border-radius: .15rem;
+        padding: .35rem .45rem;
+        font-size: .73rem;
+        text-decoration: none;
+        color: #111;
+    }
+
+    .solution-row > .mark {
+        width: .85rem;
+        height: .85rem;
+        margin-right: 1rem;
+    }
+    
+    .solution-row > p {
+        max-width: 380px; /* Imposta la larghezza massima del paragrafo */
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    :root{
+        --container-width: 80%;
+        --container-height: 25rem;
+    }
+
+    #network {
+        height: var(--container-height);
+        border: 1px solid lightgray;
+        margin: 20px auto;
+    }
+
+    select {
+        margin-left: calc((100% - var(--container-width)) / 2);
+    }
+
+    .solution-row > .mark {
+        width: .7rem;
+        height: .7rem;
+    }
+
+    .solution-row > p {
+        max-width: 400px; /* Imposta la larghezza massima del paragrafo */
+        overflow-x: auto; /* Abilita lo scorrimento orizzontale quando il contenuto supera la larghezza */
+        white-space: nowrap; /* Impedisce il riavvolgimento del testo */
+    }
+
+    .alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Effetto ombra */
+        z-index: 10000; /* Assicura che l'alert sia sopra tutto il resto */
+        display: none; /* Nascondi di default */
+        width: 330px; /* Larghezza fissa */
+        height: 200px; /* Altezza fissa */
+        flex-direction: column;
+    }
+
+    .alert h2 {
+        margin-top: 0;
+    }
+    
+    .alert p {
+        font-size: .75rem;
+        margin-bottom: 10px;
+    }
+
+    .dont-show-container > label{
+        font-size: .65rem;
+    }
+
+    .dont-show-container > input{
+        margin: none;
+        margin-inline: 2px;
+    }
+
+    #algorithm-selector{
+        width: 45%;
+        font-size: .7rem;
+        margin: 0;
+    }
+
+    button{
+        border: none;
+        border-radius: .1rem;
+        padding: .3rem .4rem;
+        font-size: .6rem;
+        text-decoration: none;
+        color: #111;
+    }
+
+    #algorithm-result{
+        position: relative;
+        top: 1rem;
+        left: 2rem;
+        max-height: 250px;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
+
+    .solution-row > .mark {
+        width: .7rem;
+        height: .7rem;
+        margin-right: 1rem;
+    }
+    
+    .solution-row > p {
+        max-width: 380px; /* Imposta la larghezza massima del paragrafo */
+        font-size: .65rem;
+    }
+}
+

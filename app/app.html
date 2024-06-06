@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="app-style.css">
+    <script src="./vis-network.min.js"></script>
+    <title>Paths Finder</title>
+</head>
+    <body>
+
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="logo">
+            <h1>Paths Finder</h1>
+        </div>
+
+        <nav>
+            <a href="../index/index.html">Home</a>
+            <a href="#">App</a>
+        </nav>
+    </header>
+
+    <div class="custom-toolbar"></div>
+    
+    <div id="path-finder">
+        <select name="algorithms" id="algorithm-selector"></select>
+        <div id="screen">
+            <div id="network"></div>
+            <div id="controls">
+                <button onclick="saveConf()" class="save-button">Save Configurations</button>
+                <button onclick="importConf()" class="save-button">Import Configurations</button>
+                <button onclick="saveMatrix()" class="save-button">Save Adjacency Matrix</button>
+                <button onclick="fitGraph()">Center Graph</button>
+                <button onclick="addNode()">Add Node</button>
+                <button onclick="removeNode()">Remove Node</button>
+                <button onclick="removeEdge()">Remove Edge</button>
+                <button onclick="removeAllConnections()">Remove All Connection</button>
+                <button onclick="removeAllNodes()">Remove All Nodes</button>
+                <button onclick="runAlgorithm()" id="run-algorithm">Run Algorithm</button>
+            </div>
+            <div id="algorithm-result">
+                <div id="algorithm-solutions"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-overlay"></div>
+    <div class="alert">
+        <h2>Instructions</h2>
+        <!-- contenuto delle regole -->
+        <div id="rule-content">
+        </div>
+        <div class="dont-show-container">
+            <label for="dontShowCheckbox">Don't show more</label>
+            <input type="checkbox" id="dontShowCheckbox" class="dont-show-btn">
+        </div>
+        <!-- fine del contenuto delle regole -->
+        <div class="alert-controls">
+            <button onclick="previousRule()">Previous</button>
+            <button onclick="nextRule()">Next</button>
+            <button onclick="closeAlert()">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">paths finder</span> by <span property="cc:attributionName">Agnello Renato Nicolae</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+    <script src="app-script.js"></script>
+</body>
+</html>
