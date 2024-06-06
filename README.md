@@ -71,8 +71,9 @@ Upon loading the page, rules and options are displayed based on the type of devi
 
 ## Preview
 See how the project looks and test it by visiting the following link:
-<a align="center" href="https://thegr33d.github.io/PathsFinder/index/index.html">https://thegr33d.github.io/PathsFinder/index/index.html</a>
-
+<div align="center">
+<a href="https://thegr33d.github.io/PathsFinder/index/index.html">https://thegr33d.github.io/PathsFinder/index/index.html</a>
+</div>
 ## Credits and Copyright
 
 This WebApp was developed by Agnello Renato Nicolae as a project for the Systems and Networks course during the 2023/24 school year and expanded to further functionalities.
