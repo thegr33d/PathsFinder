@@ -6,6 +6,7 @@
 <div style="font-size:8px; margin-bottom: 1rem" align="center"><a href="https://www.flaticon.com/free-icons/relationship" title="relationship icons">Relationship icons created by Becris - Flaticon</a>
 </div>
 
+</br>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:agnello.renatonicolae@istitutomontani.edu.it)
