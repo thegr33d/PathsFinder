@@ -76,6 +76,7 @@ See how the project looks and test it by visiting the following link:
 [https://thegr33d.github.io/PathsFinder/index/index.html](https://thegr33d.github.io/PathsFinder/index/index.html)
 
 </div>
+
 ## Credits and Copyright
 
 This WebApp was developed by Agnello Renato Nicolae as a project for the Systems and Networks course during the 2023/24 school year and expanded to further functionalities.
