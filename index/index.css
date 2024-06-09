@@ -1,0 +1,121 @@
+/*!
+ * Paths Finder
+ * 
+ * Copyright (c) 2024 Paths Finder - Agnello Renato Nicolae
+ * 
+ * Licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License.
+ * You may obtain a copy of the License at https://creativecommons.org/licenses/by-nc-nd/4.0/
+ * 
+ * You are free to:
+ * - Share — copy and redistribute the material in any medium or format
+ * 
+ * Under the following terms:
+ * - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ * - NonCommercial — You may not use the material for commercial purposes.
+ * - NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+ * - No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+ * 
+ * This project uses the vis.js library, which is licensed under the MIT License.
+ */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    height: calc(100vh - 8rem);
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.feature {
+    flex: 1;
+    width: 100%;
+    height: 15rem;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature h2 {
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    border-radius: .2rem;
+    padding: .4rem .5rem;
+    margin: 5px;
+    font-size: .8rem;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #23527c;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Media query per regole mobile */
+@media screen and (max-width: 450px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin: 10px 0;
+        width: 100%;
+        height: 15rem;
+    }
+
+    .container {
+        max-width: 85%;
+        margin-top: 6rem;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
